@@ -33,7 +33,7 @@ public class MainPersenter implements MainContract.Persenter{
         apiService.getGoodsByType(1)
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
-                .subscribe(new Subscriber<Result<List<GoodBean>>>() {
+                .subscribe(new Subscriber<Result<GoodBean>>() {
                     @Override
                     public void onCompleted() {
 
@@ -45,8 +45,9 @@ public class MainPersenter implements MainContract.Persenter{
                     }
 
                     @Override
-                    public void onNext(Result<List<GoodBean>> listResult) {
-                       // LogTools.i("Main",listResult.response().body().toString());
+                    public void onNext(Result<GoodBean> listResult) {
+                        GoodBean goodBean=listResult.response().body();
+                       LogTools.i("Main","goodbean items code:"+goodBean.getCode()+"-item size:"+goodBean.getData().size());
                     }
                 });
     }

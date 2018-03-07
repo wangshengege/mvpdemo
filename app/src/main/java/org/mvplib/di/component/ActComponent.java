@@ -1,6 +1,6 @@
 package org.mvplib.di.component;
 
-import org.mvplib.MainActivity;
+import org.mvplib.view.ui.MainActivity;
 import org.mvplib.di.module.ActModule;
 import org.mvplib.di.scopes.ActScope;
 

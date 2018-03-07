@@ -4,7 +4,6 @@ package org.mvplib.view.ui;
 import android.content.Intent;
 import android.os.Bundle;
 
-import org.mvplib.MainActivity;
 import org.mvplib.R;
 import org.mvplib.view.base.AbstractBaseActivity;
 

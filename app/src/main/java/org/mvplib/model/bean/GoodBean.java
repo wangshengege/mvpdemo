@@ -1,5 +1,7 @@
 package org.mvplib.model.bean;
 
+import java.util.List;
+
 /**
  * Author: ws.
  * Date: 2018/3/7.
@@ -8,247 +10,284 @@ package org.mvplib.model.bean;
 
 public class GoodBean extends BaseBean {
 
+
     /**
-     * goodsId : 5a03c44ce8cf7143b7ab27e0
-     * goodsClassifyId : null
-     * goodsLabelId : null
-     * goodsName : 高尔夫GOLF抽绳双肩包
-     * goodsStockNum : null
-     * price : 990.0
-     * flag : null
-     * goodsOldAddress : null
-     * costPrice : 990.0
-     * recoveryPrice : null
-     * goodsExplain : null
-     * buyerRecomContent : null
-     * identification : null
-     * groundingStatus : null
-     * groundingPerson : null
-     * groundingPersonNo : null
-     * groundingDatetime : null
-     * comment : null
-     * filepath : 5a03c459e8cf7143b7ab27e2.png
-     * goodsFilesPath : null
-     * goodsPreRiewFilesPath : null
-     * bussinessType : null
-     * preferentialStatus : 0
-     * stockStatus : 1
+     * code : 200
+     * msg : null
+     * data : [{"goodsId":"5a03c44ce8cf7143b7ab27e0","goodsClassifyId":null,"goodsLabelId":null,"goodsName":"高尔夫GOLF抽绳双肩包","goodsStockNum":null,"price":990,"flag":null,"goodsOldAddress":null,"costPrice":990,"recoveryPrice":null,"goodsExplain":null,"buyerRecomContent":null,"identification":null,"groundingStatus":null,"groundingPerson":null,"groundingPersonNo":null,"groundingDatetime":null,"comment":null,"filepath":"5a03c459e8cf7143b7ab27e2.png","goodsFilesPath":null,"goodsPreRiewFilesPath":null,"bussinessType":null,"preferentialStatus":"0","stockStatus":"1"}]
      */
 
-    private String goodsId;
-    private Object goodsClassifyId;
-    private Object goodsLabelId;
-    private String goodsName;
-    private Object goodsStockNum;
-    private double price;
-    private Object flag;
-    private Object goodsOldAddress;
-    private double costPrice;
-    private Object recoveryPrice;
-    private Object goodsExplain;
-    private Object buyerRecomContent;
-    private Object identification;
-    private Object groundingStatus;
-    private Object groundingPerson;
-    private Object groundingPersonNo;
-    private Object groundingDatetime;
-    private Object comment;
-    private String filepath;
-    private Object goodsFilesPath;
-    private Object goodsPreRiewFilesPath;
-    private Object bussinessType;
-    private String preferentialStatus;
-    private String stockStatus;
+    private int code;
+    private Object msg;
+    private List<DataBean> data;
 
-    public String getGoodsId() {
-        return goodsId;
+    public int getCode() {
+        return code;
     }
 
-    public void setGoodsId(String goodsId) {
-        this.goodsId = goodsId;
+    public void setCode(int code) {
+        this.code = code;
     }
 
-    public Object getGoodsClassifyId() {
-        return goodsClassifyId;
+    public Object getMsg() {
+        return msg;
     }
 
-    public void setGoodsClassifyId(Object goodsClassifyId) {
-        this.goodsClassifyId = goodsClassifyId;
+    public void setMsg(Object msg) {
+        this.msg = msg;
     }
 
-    public Object getGoodsLabelId() {
-        return goodsLabelId;
+    public List<DataBean> getData() {
+        return data;
     }
 
-    public void setGoodsLabelId(Object goodsLabelId) {
-        this.goodsLabelId = goodsLabelId;
+    public void setData(List<DataBean> data) {
+        this.data = data;
     }
 
-    public String getGoodsName() {
-        return goodsName;
-    }
+    public static class DataBean {
+        /**
+         * goodsId : 5a03c44ce8cf7143b7ab27e0
+         * goodsClassifyId : null
+         * goodsLabelId : null
+         * goodsName : 高尔夫GOLF抽绳双肩包
+         * goodsStockNum : null
+         * price : 990.0
+         * flag : null
+         * goodsOldAddress : null
+         * costPrice : 990.0
+         * recoveryPrice : null
+         * goodsExplain : null
+         * buyerRecomContent : null
+         * identification : null
+         * groundingStatus : null
+         * groundingPerson : null
+         * groundingPersonNo : null
+         * groundingDatetime : null
+         * comment : null
+         * filepath : 5a03c459e8cf7143b7ab27e2.png
+         * goodsFilesPath : null
+         * goodsPreRiewFilesPath : null
+         * bussinessType : null
+         * preferentialStatus : 0
+         * stockStatus : 1
+         */
 
-    public void setGoodsName(String goodsName) {
-        this.goodsName = goodsName;
-    }
+        private String goodsId;
+        private Object goodsClassifyId;
+        private Object goodsLabelId;
+        private String goodsName;
+        private Object goodsStockNum;
+        private double price;
+        private Object flag;
+        private Object goodsOldAddress;
+        private double costPrice;
+        private Object recoveryPrice;
+        private Object goodsExplain;
+        private Object buyerRecomContent;
+        private Object identification;
+        private Object groundingStatus;
+        private Object groundingPerson;
+        private Object groundingPersonNo;
+        private Object groundingDatetime;
+        private Object comment;
+        private String filepath;
+        private Object goodsFilesPath;
+        private Object goodsPreRiewFilesPath;
+        private Object bussinessType;
+        private String preferentialStatus;
+        private String stockStatus;
 
-    public Object getGoodsStockNum() {
-        return goodsStockNum;
-    }
+        public String getGoodsId() {
+            return goodsId;
+        }
 
-    public void setGoodsStockNum(Object goodsStockNum) {
-        this.goodsStockNum = goodsStockNum;
-    }
+        public void setGoodsId(String goodsId) {
+            this.goodsId = goodsId;
+        }
 
-    public double getPrice() {
-        return price;
-    }
+        public Object getGoodsClassifyId() {
+            return goodsClassifyId;
+        }
 
-    public void setPrice(double price) {
-        this.price = price;
-    }
+        public void setGoodsClassifyId(Object goodsClassifyId) {
+            this.goodsClassifyId = goodsClassifyId;
+        }
 
-    public Object getFlag() {
-        return flag;
-    }
+        public Object getGoodsLabelId() {
+            return goodsLabelId;
+        }
 
-    public void setFlag(Object flag) {
-        this.flag = flag;
-    }
+        public void setGoodsLabelId(Object goodsLabelId) {
+            this.goodsLabelId = goodsLabelId;
+        }
 
-    public Object getGoodsOldAddress() {
-        return goodsOldAddress;
-    }
+        public String getGoodsName() {
+            return goodsName;
+        }
 
-    public void setGoodsOldAddress(Object goodsOldAddress) {
-        this.goodsOldAddress = goodsOldAddress;
-    }
+        public void setGoodsName(String goodsName) {
+            this.goodsName = goodsName;
+        }
 
-    public double getCostPrice() {
-        return costPrice;
-    }
+        public Object getGoodsStockNum() {
+            return goodsStockNum;
+        }
 
-    public void setCostPrice(double costPrice) {
-        this.costPrice = costPrice;
-    }
+        public void setGoodsStockNum(Object goodsStockNum) {
+            this.goodsStockNum = goodsStockNum;
+        }
 
-    public Object getRecoveryPrice() {
-        return recoveryPrice;
-    }
+        public double getPrice() {
+            return price;
+        }
 
-    public void setRecoveryPrice(Object recoveryPrice) {
-        this.recoveryPrice = recoveryPrice;
-    }
+        public void setPrice(double price) {
+            this.price = price;
+        }
 
-    public Object getGoodsExplain() {
-        return goodsExplain;
-    }
+        public Object getFlag() {
+            return flag;
+        }
 
-    public void setGoodsExplain(Object goodsExplain) {
-        this.goodsExplain = goodsExplain;
-    }
+        public void setFlag(Object flag) {
+            this.flag = flag;
+        }
 
-    public Object getBuyerRecomContent() {
-        return buyerRecomContent;
-    }
+        public Object getGoodsOldAddress() {
+            return goodsOldAddress;
+        }
 
-    public void setBuyerRecomContent(Object buyerRecomContent) {
-        this.buyerRecomContent = buyerRecomContent;
-    }
+        public void setGoodsOldAddress(Object goodsOldAddress) {
+            this.goodsOldAddress = goodsOldAddress;
+        }
 
-    public Object getIdentification() {
-        return identification;
-    }
+        public double getCostPrice() {
+            return costPrice;
+        }
 
-    public void setIdentification(Object identification) {
-        this.identification = identification;
-    }
+        public void setCostPrice(double costPrice) {
+            this.costPrice = costPrice;
+        }
 
-    public Object getGroundingStatus() {
-        return groundingStatus;
-    }
+        public Object getRecoveryPrice() {
+            return recoveryPrice;
+        }
 
-    public void setGroundingStatus(Object groundingStatus) {
-        this.groundingStatus = groundingStatus;
-    }
+        public void setRecoveryPrice(Object recoveryPrice) {
+            this.recoveryPrice = recoveryPrice;
+        }
 
-    public Object getGroundingPerson() {
-        return groundingPerson;
-    }
+        public Object getGoodsExplain() {
+            return goodsExplain;
+        }
 
-    public void setGroundingPerson(Object groundingPerson) {
-        this.groundingPerson = groundingPerson;
-    }
+        public void setGoodsExplain(Object goodsExplain) {
+            this.goodsExplain = goodsExplain;
+        }
 
-    public Object getGroundingPersonNo() {
-        return groundingPersonNo;
-    }
+        public Object getBuyerRecomContent() {
+            return buyerRecomContent;
+        }
 
-    public void setGroundingPersonNo(Object groundingPersonNo) {
-        this.groundingPersonNo = groundingPersonNo;
-    }
+        public void setBuyerRecomContent(Object buyerRecomContent) {
+            this.buyerRecomContent = buyerRecomContent;
+        }
 
-    public Object getGroundingDatetime() {
-        return groundingDatetime;
-    }
+        public Object getIdentification() {
+            return identification;
+        }
 
-    public void setGroundingDatetime(Object groundingDatetime) {
-        this.groundingDatetime = groundingDatetime;
-    }
+        public void setIdentification(Object identification) {
+            this.identification = identification;
+        }
 
-    public Object getComment() {
-        return comment;
-    }
+        public Object getGroundingStatus() {
+            return groundingStatus;
+        }
 
-    public void setComment(Object comment) {
-        this.comment = comment;
-    }
+        public void setGroundingStatus(Object groundingStatus) {
+            this.groundingStatus = groundingStatus;
+        }
 
-    public String getFilepath() {
-        return filepath;
-    }
+        public Object getGroundingPerson() {
+            return groundingPerson;
+        }
 
-    public void setFilepath(String filepath) {
-        this.filepath = filepath;
-    }
+        public void setGroundingPerson(Object groundingPerson) {
+            this.groundingPerson = groundingPerson;
+        }
 
-    public Object getGoodsFilesPath() {
-        return goodsFilesPath;
-    }
+        public Object getGroundingPersonNo() {
+            return groundingPersonNo;
+        }
 
-    public void setGoodsFilesPath(Object goodsFilesPath) {
-        this.goodsFilesPath = goodsFilesPath;
-    }
+        public void setGroundingPersonNo(Object groundingPersonNo) {
+            this.groundingPersonNo = groundingPersonNo;
+        }
 
-    public Object getGoodsPreRiewFilesPath() {
-        return goodsPreRiewFilesPath;
-    }
+        public Object getGroundingDatetime() {
+            return groundingDatetime;
+        }
 
-    public void setGoodsPreRiewFilesPath(Object goodsPreRiewFilesPath) {
-        this.goodsPreRiewFilesPath = goodsPreRiewFilesPath;
-    }
+        public void setGroundingDatetime(Object groundingDatetime) {
+            this.groundingDatetime = groundingDatetime;
+        }
 
-    public Object getBussinessType() {
-        return bussinessType;
-    }
+        public Object getComment() {
+            return comment;
+        }
 
-    public void setBussinessType(Object bussinessType) {
-        this.bussinessType = bussinessType;
-    }
+        public void setComment(Object comment) {
+            this.comment = comment;
+        }
 
-    public String getPreferentialStatus() {
-        return preferentialStatus;
-    }
+        public String getFilepath() {
+            return filepath;
+        }
 
-    public void setPreferentialStatus(String preferentialStatus) {
-        this.preferentialStatus = preferentialStatus;
-    }
+        public void setFilepath(String filepath) {
+            this.filepath = filepath;
+        }
 
-    public String getStockStatus() {
-        return stockStatus;
-    }
+        public Object getGoodsFilesPath() {
+            return goodsFilesPath;
+        }
 
-    public void setStockStatus(String stockStatus) {
-        this.stockStatus = stockStatus;
+        public void setGoodsFilesPath(Object goodsFilesPath) {
+            this.goodsFilesPath = goodsFilesPath;
+        }
+
+        public Object getGoodsPreRiewFilesPath() {
+            return goodsPreRiewFilesPath;
+        }
+
+        public void setGoodsPreRiewFilesPath(Object goodsPreRiewFilesPath) {
+            this.goodsPreRiewFilesPath = goodsPreRiewFilesPath;
+        }
+
+        public Object getBussinessType() {
+            return bussinessType;
+        }
+
+        public void setBussinessType(Object bussinessType) {
+            this.bussinessType = bussinessType;
+        }
+
+        public String getPreferentialStatus() {
+            return preferentialStatus;
+        }
+
+        public void setPreferentialStatus(String preferentialStatus) {
+            this.preferentialStatus = preferentialStatus;
+        }
+
+        public String getStockStatus() {
+            return stockStatus;
+        }
+
+        public void setStockStatus(String stockStatus) {
+            this.stockStatus = stockStatus;
+        }
     }
 }

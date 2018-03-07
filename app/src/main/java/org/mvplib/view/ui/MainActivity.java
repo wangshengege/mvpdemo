@@ -1,7 +1,8 @@
-package org.mvplib;
+package org.mvplib.view.ui;
 
 import android.os.Bundle;
 
+import org.mvplib.R;
 import org.mvplib.di.component.DaggerActComponent;
 import org.mvplib.di.module.ActModule;
 import org.mvplib.presenter.MainContract;

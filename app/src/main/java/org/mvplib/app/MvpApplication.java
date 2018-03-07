@@ -3,7 +3,7 @@ package org.mvplib.app;
 import android.app.Application;
 import android.content.Context;
 
-import org.mvplib.MainActivity;
+import org.mvplib.view.ui.MainActivity;
 import org.mvplib.di.component.ApiComponent;
 import org.mvplib.di.component.DaggerApiComponent;
 import org.mvplib.di.module.ApiModule;

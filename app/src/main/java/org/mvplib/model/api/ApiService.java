@@ -18,5 +18,5 @@ import rx.Observable;
 
 public interface ApiService {
     @GET("api/v1/goods/recommend/list/{id}")
-    Observable<Result<List<GoodBean>>> getGoodsByType(@Path("id")int id);
+    Observable<Result<GoodBean>> getGoodsByType(@Path("id")int id);
 }
